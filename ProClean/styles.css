@@ -3,7 +3,22 @@
 	Author: Frédéric K.
 	Date: 30/03/2012
 */
-body{margin:0px; padding:0px; font-family:"Lucida Grande",Verdana,sans-serif; font-size:12px; line-height:20px; color:#666; background-color:#dfe1e3}
+@font-face {
+  font-family: 'Kelly Slab';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Kelly Slab'), local('KellySlab-Regular'), url('http://themes.googleusercontent.com/static/fonts/kellyslab/v3/4A8U9DtmhklTRFOO_fzgaL3hpw3pgy2gAi-Ip7WPMi0.woff') format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Ubuntu'), url('http://themes.googleusercontent.com/static/fonts/ubuntu/v4/vRvZYZlUaogOuHbBTT1SNevvDin1pK8aKteLpeZ5c0A.woff') format('woff');
+}
+body{margin:0px; padding:0px; line-height: 1.5;
+	color: #34394F;
+	font-size: 14px;
+	font-family: 'Ubuntu', "Helvetica Neue",  Helvetica,  Arial,  sans-serif; color:#666; background-color:#dfe1e3}
 
 /* ! Links */
 /* ---------------------------------------------------------------------------------
@@ -15,10 +30,11 @@ a.no-underline, a.no-underline:hover{text-decoration:none}
 /* ! Top level elements */
 /* ---------------------------------------------------------------------------------
 */
-h1{}
-h2{}
-h3{color:#7ca8b4; font-weight:normal}
-h4{font-size:12px; margin:0; padding:0}
+h1, h2, h3, h4, .logo{font-family: 'Kelly Slab','Myriad Pro', Arial, sans-serif;text-shadow: 1px 1px 0px #F2F2F2, 1px 2px 0px #B1B1B2;}
+h1{font-size: 28px}
+h2{font-size: 20px}
+h3{font-size: 18px; color:#7ca8b4; font-weight:normal; text-transform: uppercase}
+h4{font-size:16px; margin:0; padding:0}
 
 ul{list-style:none; margin:0px; padding:0px}
 
@@ -59,9 +75,8 @@ button.pill:hover, a.button.pill:hover{border-top-color:transparent}
 /* ---------------------------------------------------------------------------------
 */
 #header{background:#333940}
-#header h1 a{color:#999; text-decoration:none; display:block}
 #navigation{width:900px; height:40px; padding:20px 0px; margin:0px auto}
-#navigation li.logo a{display:block; margin-right:25px; float:left; text-transform:uppercase; font-weight:bold; font-size:20px; color:#FFF}
+#navigation li.logo a{display:block; margin-right:25px; margin-top:-10px; float:left; font-weight:bold; font-size:25px; color:#FFF}
 #navigation li{display:block; float:left; margin-right:20px; margin-top:10px}
 #navigation a{display:block; color:#BBC2C8; font-size:15px}
 #navigation a:hover, #navigation a:active{color:#EEE; text-decoration:none}
