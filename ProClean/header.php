@@ -3,9 +3,10 @@
     <head>
         <meta charset="utf-8" />
 	    <title><?php showTitleTag(); ?></title>
+	    <base href="<?php showSiteUrl(); ?>/" />
         <meta name="description" content="<?php showMetaDescriptionTag(); ?>" />
         <!--[if lt IE 9]>
-        <script src="theme/defaulthtml5/html5.js"></script>
+        <script src="theme/<?php echo $coreConf['theme']; ?>/html5.js"></script>
         <![endif]-->
 	<?php showLinkTags(); ?>
 	<?php showScriptTags(); ?>
@@ -13,15 +14,16 @@
     </head>
 	<body>
 	
-		<div id="header">
-			<ul id="navigation">
+		<header>
+		  <nav>
+			<ul>
 			    <li class="logo"><a title="<?php showSiteDescription(); ?>" href="<?php showSiteUrl(); ?>"><?php showSiteName(); ?></a></li>
 			    <?php showMainNavigation(); ?>
 			</ul>
-			
-		</div>
+		  </nav>			
+		</header>
 		
-		<div id="main">
+		<section>
 			<div class="content">
 				<div id="page">
 				    <?php showBreadcrumb(); ?>
