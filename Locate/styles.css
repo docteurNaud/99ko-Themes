@@ -1,0 +1,174 @@
+/* @group Base */
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: #55606e;
+    background: #f7f7f7;
+    font: 16px/28px 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+    -webkit-font-smoothing: antialiased;
+}
+.clear {
+	clear: both
+}
+hr {
+	height: 5px;
+	border: 0;
+	outline: 0;
+	clear: both;
+	background-color: rgba(255, 255, 255, 0.7);
+	-webkit-box-shadow: inset 0px 1px 0px 0px rgba(221, 221, 221, 1);
+	-moz-box-shadow: inset 0px 1px 0px 0px rgba(221, 221, 221, 1);
+	box-shadow: inset 0px 1px 0px 0px rgba(221, 221, 221, 1);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin: 15px auto;
+}
+a {
+    color: #219a5b;
+    text-decoration: none;
+}
+
+/* @end */
+
+
+
+
+/* @group Burger */
+
+section#burger {
+	min-height: 100%
+}
+
+/* @end */
+
+
+
+
+/* @group Header */
+
+#top a {
+    float: left;
+    color: #b1b8c0;
+}
+#top,#footer {
+    width: 500px;
+    margin: auto;
+}
+section#head {
+    color: #b9c1c8;
+    height: 45px;
+    text-align: right;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 45px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+header {
+    height: 220px;
+    margin-bottom: 30px;
+    background: url('logo.png') no-repeat center;
+}
+header a {
+    width: 500px;
+    height: 220px;
+    margin: 0 auto;
+    display: block;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+/* @end */
+
+
+
+
+/* @group Poste */
+
+#content {
+    margin: auto;
+    width: 500px;
+}
+
+/* @end */
+
+
+
+
+/* @group Article */
+
+article {
+    margin-bottom: 80px;
+    border-bottom: 4px solid #cbd0d5;
+}
+article p { text-align: justify }
+article img { max-width: 500px }
+article:last-child { border-bottom: 0 }
+article h1 {
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+article h2,
+article h3 { margin: 30px 0 10px 0 }
+article h1,
+article h1 a { font: 200 32px/40px 'Helvetica Neue', Helvetica, Arial, Sans-Serif; text-align: center; }
+article h2,
+article h2 a { font: 200 26px/38px 'Helvetica Neue', Helvetica, Arial, Sans-Serif }
+article h3,
+article h3 a { font: 200 22px/30px 'Helvetica Neue', Helvetica, Arial, Sans-Serif }
+article h1,
+article h1 a,
+article h2,
+article h2 a,
+article h3,
+article h3 a { color: #27313d }
+article pre {
+    margin: 0;
+    padding: 20px;
+    font: 11px/20px Menlo, 'Andale Mono', 'Courier New', Serif;
+    overflow: auto;
+    color: #55606e;
+    background: #cbd0d5;
+}
+
+/* @end */
+
+
+
+
+/* @group Footer */
+
+footer {
+    color: #219a5b;
+	font-weight: bold;
+    font-size: 14px;
+    overflow: hidden;
+    line-height: 20px;
+	background-color: #38dd92;
+}
+footer nav {
+	width: 65px;
+	float: left;
+	text-align: right;
+	padding: 0 15px 0 0;
+	margin: 20px 0;
+	border-right: 1px solid;
+}
+footer nav a {
+	display: block;
+}
+footer p {
+	margin: 20px 0;
+	float: right;
+	text-align: right;
+}
+footer a {
+    color: #1a7a48;
+}
+footer a:hover {
+	color: #fff;
+}
+
+/* @end */
